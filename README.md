@@ -11,6 +11,9 @@ After experiencing a real cybercrime incident in my family, I decided to learn h
 - Simulated login form with SQL Injection vulnerability
 - Plan to add a secure version with prepared statements
 - Educational explanations on SQLi and how to prevent it
+- 
+## Learn more about SQL injection: 
+https://github.com/xudoyor-cyber/safezone-cyber-demo/blob/cafd8983d60bfd24ecb48a202699e4d12df8bab3/learn.html
 
 ## Author
 Surijiddinov Xudoyor Davronovich
