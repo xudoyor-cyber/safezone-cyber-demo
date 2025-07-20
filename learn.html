@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn: SQL Injection</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; }
+        h1 { color: #333; }
+        code { background-color: #eee; padding: 3px 5px; border-radius: 3px; }
+        .danger { color: red; font-weight: bold; }
+        .safe { color: green; font-weight: bold; }
+        .section { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>What is SQL Injection?</h1>
+
+    <div class="section">
+        <p><strong>SQL Injection</strong> is a type of attack where hackers input malicious SQL code into forms to access or destroy your database.</p>
+    </div>
+
+    <div class="section">
+        <h2>⚠️ Example of a vulnerable login</h2>
+        <p>Imagine you enter this into a login form:</p>
+        <pre><code>' OR '1'='1</code></pre>
+        <p>This tricks the database into logging you in without knowing the password!</p>
+    </div>
+
+    <div class="section">
+        <h2 class="danger">Why it's dangerous</h2>
+        <ul>
+            <li>Attackers can steal all user data</li>
+            <li>They can delete or change your database</li>
+            <li>Your website can be fully taken over</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="safe">How to protect your site</h2>
+        <ul>
+            <li>Always use <code>prepared statements</code> (as shown in <code>secure_login.py</code>)</li>
+            <li>Never trust user input</li>
+            <li>Validate and sanitize all data</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🧍 Why I care about this</h2>
+        <p>
+            My family once lost $15,000 in a cybercrime attack. Since then, I decided to become an expert in cybersecurity
+            and protect others from such pain. I want to fix weaknesses in my country and bring awareness to the world.
+        </p>
+    </div>
+</body>
+</html>
